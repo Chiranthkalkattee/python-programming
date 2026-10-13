@@ -1,0 +1,16 @@
+str1 = "A1b2B!a"
+
+def isAlphabeticPalindrome(code):
+    actual_string = ""
+    for i in code:
+       if i.isalpha():
+           actual_string = actual_string+i.lower()
+    if actual_string == actual_string[::-1]:
+        return 1
+    else:
+        return 0
+        
+           
+
+    
+print(isAlphabeticPalindrome(str1))
